@@ -1,0 +1,100 @@
+#header_area {
+  // Top header Area Style
+  .top_header_area {
+    background: $bgColor;
+    padding: $paddingSM;
+    position: relative;
+    .mobile_bars {
+      display: none;
+    }
+    p {
+      font: {
+        size: 14px;
+        weight: $fontWMD;
+      }
+      color: $whiteColor;
+      margin: 8px 0 0;
+      i {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  }
+  // Main Header Area Style
+  .main_header {
+    position: fixed;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    &.scrolled {
+      padding: 10px 0;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: rgba(110, 122, 255, 0.5);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .main_header {
+    background: $whiteColor;
+    padding: 25px 0;
+    .logo_area {
+      flex-basis: 30%;
+    }
+    .main_menu {
+      flex-basis: 70%;
+      margin-top: 10px;
+      ul {
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        li {
+          margin-left: 25px;
+          a {
+            color: $bkColor;
+            font-size: 16px;
+            font-weight: $fontWMD;
+            &:hover {
+              color: $bgColor;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+      .main_menu {
+        background: $pColor;
+        position: absolute;
+        width: 96%;
+        left: -999999px;
+        ul {
+          flex-direction: column;
+          text-align: left;
+          li {
+            margin-left: 0;
+            margin-bottom: 5px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            a {
+              color: $whiteColor;
+              display: block;
+              padding: 10px 15px;
+              &:hover {
+                background: $bkColor;
+                color: $whiteColor;
+              }
+            }
+          }
+        }
+        &.open {
+          left: 10px;
+        }
+      }
+    }
+  }
+}

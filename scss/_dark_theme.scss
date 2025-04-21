@@ -1,0 +1,140 @@
+$darkBGColor: #1f1f1f;
+$darkSColor: #262626;
+
+body.dark{
+  .social_area{
+    ul{
+      li{
+        a{
+          &:hover{
+            background: $bkColor;
+          }
+        }
+      }
+    }
+  }
+  #header_area{
+    .top_header_area{
+      background: $darkBGColor;
+      p {
+        color: $sColor;
+      }
+    }
+    .main_header{
+      background: $darkSColor;
+      .main_menu ul li a{
+        color: $sColor;
+        &:hover{
+        color: $pColor;
+        }
+      }
+    }
+  }
+  #hero_area{
+    background: $darkBGColor;
+    .admin_info{
+      h2, h5, p{
+        color: $sColor;
+      }
+    }
+  }
+  #about_area{
+    background: $darkSColor;
+    .container.text-center{
+      color: $sColor;
+    }
+    .about_numbers{
+      .child_about{
+        background: $darkBGColor;
+        h4, h6{
+          color: $sColor;
+        }
+      }
+    }
+    .about_info{
+      color: $sColor;
+      h3, h6{
+        color: $sColor;
+      }
+    }
+  }
+  #service_area {
+    background: $darkBGColor;
+    .container.text-center{
+      color: $sColor;
+    }
+    .child_service{
+      background: $darkSColor;
+      box-shadow: none;
+      i{
+        color: $sColor;
+      }
+      h4{
+        color: $sColor;
+      }
+      p{
+        color: $sColor;
+      }
+      &:hover{
+      i {
+      color: $bkColor;
+      }
+      h4, p {
+      color: $bkColor;
+      }
+      }
+    }
+  }
+  #projects_area{
+    background: $darkSColor;
+    .container.text-center{
+    color: $sColor;
+    }
+  }
+  #blog_area {
+  background: $darkBGColor;
+  .container.text-center{
+  color: $sColor;
+  }
+  .child_blog{
+    .blog_info {
+      background: $darkSColor;
+      h4 a, p{
+        color: $sColor;
+      }
+    }
+  }
+}
+#contact_area{
+  background: $darkSColor;
+  .container.text-center{
+  color: $sColor;
+  }
+  .contact_info{
+    div{
+      background: $darkBGColor;
+      p{
+        color: $sColor;
+      }
+    }
+  }
+  .contact_form{
+   input, textarea{
+      background: $darkBGColor;
+      border-color: $darkSColor;
+      color: $sColor;
+   }
+    input[type="submit"] {
+      background: $bkColor;
+      color: $sColor;
+      &:hover{
+      background: $pColor;
+      color: $bgColor;
+     }
+    }
+  }
+ }
+ #footer_area{
+  background: $darkBGColor;
+ }
+}

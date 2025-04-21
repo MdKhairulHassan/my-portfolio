@@ -1,0 +1,161 @@
+// color
+$pColor: #448ee2;
+$sColor: #e8f1fb;
+$bgColor: #000435;
+$whiteColor: #fff;
+$bkColor: #6aa5e9;
+
+// Font Weight
+$fontWSM: 400;
+$fontWMD: 600;
+$fontWXL: 700;
+
+body,
+p {
+  font: {
+    size: 16px;
+    width: $fontWSM;
+  }
+}
+p {
+  margin: 0 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fontWXL;
+  margin: 0 0 15px;
+  line-height: 1.2em;
+}
+
+// Main Width
+$small: 50px;
+$medium: 767px;
+
+// Modal-Box
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  .modal-box {
+    padding: 20px;
+    font-family: 'poppins', sans-serif;
+    list-style: 1.5em;
+    font-size: 20px;
+    background: #000435;
+    color: #448ee2;
+    button {
+      border: none;
+    }
+  }
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    width: 96%;
+  }
+}
+// Padding
+$paddingSM: 10px 0;
+.paddingXL {
+  padding: 60px 0;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    padding: 25px 0;
+  }
+}
+
+// Margin
+.m-top {
+  margin-top: 45px;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    margin-top: 25px;
+  }
+}
+
+// Social Area Style
+.social_area {
+  ul {
+    text-align: right;
+    li {
+      margin-left: 15px;
+    }
+    a {
+      display: block;
+      background: $sColor;
+      width: 40px;
+      height: 40px;
+      font-size: 15px;
+      color: $bkColor;
+      text-align: center;
+      padding-top: 8px;
+      border-radius: 30px;
+      i {
+        margin: 0;
+      }
+      &:hover {
+        background: $bkColor;
+        color: $bgColor;
+      }
+    }
+    i.fa-solid {
+      display: block;
+      background: $sColor;
+      width: 40px;
+      height: 40px;
+      font-size: 15px;
+      color: $bkColor;
+      text-align: center;
+      padding-top: 12px;
+      transition: 0.3s;
+      cursor: pointer;
+      border-radius: 30px;
+      &:hover {
+        background: $bkColor;
+        color: $bgColor;
+      }
+    }
+  }
+}
+
+// Call To Action Button
+.btn-cta {
+  background: $bkColor;
+  color: $whiteColor;
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: $fontWMD;
+  border-radius: 5px;
+  margin-top: 5px;
+  &:hover {
+    background: $pColor;
+    color: $bgColor;
+  }
+}
+
+// Title & Sub Title Style
+.title {
+  color: $pColor;
+  font-size: 55px;
+  line-height: 1em;
+  margin-bottom: 10px;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    font-size: 25px;
+  }
+}
+.sub-title {
+  color: $bkColor;
+  font-size: 20px;
+  font-weight: $fontWMD;
+  line-height: 1em;
+  margin-bottom: 0;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    font-size: 15px;
+  }
+}

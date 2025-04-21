@@ -1,0 +1,339 @@
+// Laptop Screen
+@media only screen and (min-width: 767px) and (max-width: 1410px) {
+  .container {
+    width: 1140px;
+  }
+  #about_area .about_numbers .child_about {
+    h4 {
+      font-size: 55px;
+    }
+    h6 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  #projects_area {
+    .project_x {
+      grid-column: auto / span 1;
+    }
+    .project_y {
+      grid-row: auto / span 1;
+    }
+    .project_xy {
+      grid-column: auto / span 1;
+      grid-row: auto / span 1;
+    }
+  }
+  #contact_area .contact_info div {
+    padding: 40px 20px;
+    display: flex;
+  }
+}
+
+// Tablet Screen
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+  .container {
+    width: 96%;
+  }
+  .social_area ul li {
+    margin-left: 5px;
+  }
+  #contact_area .contact_info div {
+    padding: 20px 15px;
+  }
+  #header_area .top_header_area {
+    .container.inner {
+      div {
+        flex-basis: 20%;
+        &:first-child,
+        &:last-child {
+          flex-basis: 30%;
+        }
+      }
+    }
+    p {
+      font-size: 13px;
+      text-align: center;
+      i {
+        display: block;
+      }
+    }
+  }
+  #hero_area {
+    .inner {
+      flex-direction: column;
+    }
+    .admin_info {
+      flex-basis: 100%;
+      order: 2;
+    }
+    .admin_image {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+  #about_area .about_numbers .child_about {
+    h4 {
+      padding-top: 20px;
+    }
+    h6 {
+      padding-top: 10px;
+    }
+  }
+  #about_area .about_numbers .child_about,
+  #service_area .child_service {
+    padding: 25px 20px;
+    h6 {
+      line-height: 25px;
+    }
+  }
+  //  Contact Area Style
+  #contact_area {
+    .inner,
+    .contact_info {
+      flex-direction: column;
+    }
+    .contact_info {
+      div {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      iframe {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) and (max-width: 842px) {
+  #header_area {
+    .main_header {
+      top: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 1200px) {
+  #hero_area {
+    img {
+      margin: 0;
+    }
+  }
+}
+
+// Moblie Screen
+@media only screen and (min-width: $small) and (max-width: $medium) {
+  // header area style
+  #header_area {
+    .inner {
+      display: block;
+    }
+    // Top header Area Style
+    .top_header_area {
+      .address,
+      .phone_number,
+      .email_address {
+        display: none;
+      }
+
+      .social_area {
+        ul {
+          text-align: center;
+        }
+      }
+      .mobile_bars {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        i {
+          color: $whiteColor;
+          font-size: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+    // Main Menu Style
+    .main_header {
+      .logo_area {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+  // Hero Area Style
+  #hero_area {
+    .inner {
+      flex-direction: column;
+    }
+    .admin_info {
+      flex-basis: 100%;
+      padding: 20px;
+      order: 2;
+      h2 {
+        font-size: 45px;
+      }
+    }
+    .admin_image {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+
+  //About Area Style
+  #about_area {
+    .inner {
+      flex-direction: column;
+    }
+    .about_numbers {
+      flex-basis: 100%;
+      .child_about {
+        h4 {
+          font-size: 25px;
+        }
+        h6 {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+    .about_info {
+      flex-basis: 100%;
+      padding: 20px;
+      h3 {
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // Service Area Style
+  #service_area {
+    .inner {
+      flex-direction: column;
+    }
+    .child_service {
+      margin-bottom: 25px;
+      padding: 20px;
+      i {
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Project Area Style
+  #projects_area {
+    .inner-grid {
+      display: block;
+    }
+    .child_project {
+      margin-bottom: 15px;
+    }
+  }
+
+  // Blog Area Style
+  #blog_area {
+    .inner {
+      flex-direction: column;
+    }
+    .child_blog {
+      margin-bottom: 25px;
+    }
+  }
+
+  //  Contact Area Style
+  #contact_area {
+    .inner,
+    .contact_info {
+      flex-direction: column;
+    }
+    .contact_info {
+      div {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      iframe {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Mini Mobile or electric hand bracelet Screen
+@media only screen and (min-width: 100px) and (max-width: 385px) {
+  .container {
+    width: 95%;
+  }
+  .social_area ul li {
+    margin-left: 5px;
+  }
+  #header_area .top_header_area .mobile_bars {
+    right: 10px;
+  }
+  #about_area .about_numbers .child_about {
+    padding: 25px 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 480px) {
+  #hero_area {
+    .admin_info {
+      h2 {
+        font-size: 15px;
+      }
+      h5 {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 315px) {
+  .container {
+    width: 90%;
+  }
+  .social_area ul li a {
+    margin-left: 1px;
+    width: 25px;
+  }
+  .social_area ul {
+    i.fa-solid {
+      width: 25px;
+    }
+  }
+  #header_area .top_header_area .mobile_bars {
+    right: 4px;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 230px) {
+  .container {
+    width: 90%;
+  }
+  .social_area ul li a {
+    margin-left: 1px;
+    width: 20px;
+  }
+  .social_area ul {
+    i.fa-solid {
+      width: 20px;
+    }
+  }
+  #about_area .about_numbers .child_about {
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+}

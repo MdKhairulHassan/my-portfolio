@@ -107,7 +107,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) and (max-width: 842px) {
+@media only screen and (min-width: $medium) and (max-width: 904px) {
   #header_area {
     .main_header {
       top: 100px;
@@ -137,21 +137,9 @@
       .email_address {
         display: none;
       }
-
       .social_area {
         ul {
           text-align: center;
-        }
-      }
-      .mobile_bars {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        i {
-          color: $whiteColor;
-          font-size: 25px;
-          cursor: pointer;
         }
       }
     }
@@ -160,6 +148,17 @@
       .logo_area {
         width: 200px;
         margin: 0 auto;
+      }
+      .mobile_bars {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        i {
+          color: $pColor;
+          font-size: 25px;
+          cursor: pointer;
+        }
       }
     }
   }

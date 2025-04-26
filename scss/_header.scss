@@ -4,9 +4,6 @@
     background: $bgColor;
     padding: $paddingSM;
     position: relative;
-    .mobile_bars {
-      display: none;
-    }
     p {
       font: {
         size: 14px;
@@ -28,6 +25,9 @@
     width: 100%;
     z-index: 10;
     transition: all 0.3s ease-in-out;
+    .mobile_bars {
+      display: none;
+    }
     &.scrolled {
       padding: 10px 0;
       position: fixed;
